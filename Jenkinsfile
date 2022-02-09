@@ -17,6 +17,12 @@ pipeline {
                 echo 'Hello World deploy'
             }
         }
+        stage('extra-stage') {
+            steps {
+                echo 'Hello World extra stage in develop only'
+            }
+        }
+
     }
 }
 
